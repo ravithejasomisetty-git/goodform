@@ -99,3 +99,8 @@ Final rerun: all seven workout journeys passed after the live skipped-status fix
 
 Replaced the rear double-biceps mark with a generated transparent full-body overhead-arm bodybuilding pose. Adjusted desktop/mobile proportions and accessible label. TypeScript, production build, and all 12 browser checks passed; desktop and mobile screenshots were reviewed.
 
+## Custom exercise removal (11 October 2026)
+
+TypeScript compilation, production build, 19 logic tests and all 13 browser scenarios passed. The new browser scenario logs a custom exercise, removes it, checks that persisted sessions, personal bests and last-performance records remain identical, verifies the affected routine cannot start, replaces its removed entry, checks historical exercise details, and restores the exercise. Logic tests also cover rejecting removed exercises in new session plans, preserving their historical personal-best calculations and retaining the archive flag in backups.
+
+The initial removal test needed an explicit Chest library filter; this was a test navigation issue. Browser runtime errors: none. Native download completion remains unverified in the sandbox; exported content and backup restoration passed.

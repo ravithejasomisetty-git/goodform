@@ -110,3 +110,6 @@ Ending a workout is allowed even when no sets or warm-ups were logged. In comple
 Run the seven isolated user journeys with npm run test:journeys. Start the app first; APP_URL overrides the default http://127.0.0.1:4176/. See UI_TEST_REPORT.md for the scenarios and verified regression fix.
 
 
+## Remove custom exercises
+
+In Routines, choose the exercise's muscle group in Your exercise library and click Remove beside a custom exercise. Removal hides it from future selection; completed workout history, personal bests, and existing session snapshots remain intact. The removal dialog lists affected routines with Edit buttons. Remove or replace that entry before saving the routine or starting a new workout. Removed custom exercises can be restored from the expandable list below the library. Built-in exercises cannot be removed.
